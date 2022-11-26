@@ -5,3 +5,5 @@
 
 
 > [GitHub](https://github.com/newwangshaofeng "github")
+
+>[笔记](https://newwangshaofeng.github.io/NoteBookForAll/#/)

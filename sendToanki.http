@@ -1,0 +1,38 @@
+
+
+
+### 创建anki卡片
+
+@videoPath = "C:/Users/16934/Downloads/unit-1-苗千千Miao-BV1yA4y1Q7QH-EiSXQM8r8gNQAFfH/a.mp4"
+
+
+POST http://localhost:8765  HTTP/1.1
+content-type: application/json
+
+{
+    "action": "addNotes",
+    "version": 6,
+    "params": {
+        "notes": [
+            {
+                "deckName": "单词",
+                "modelName": "Basic",
+                "fields": {
+                    "Front": "front content",
+                    "Back": "back content"
+                },
+                "tags": [
+                    "单词"
+                ],
+                "video": [{
+                    "path":{{videoPath}},
+                    "filename": "英语",
+                    "skipHash": "4117e8aab0d37534d9c8eac362388bbe",
+                    "fields": [
+                        "Back"
+                    ]
+                }]
+            }
+        ]
+    }
+}
